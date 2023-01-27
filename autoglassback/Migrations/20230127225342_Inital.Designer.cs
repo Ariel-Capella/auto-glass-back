@@ -12,8 +12,8 @@ using autoglassback.Context;
 namespace autoglassback.Migrations
 {
     [DbContext(typeof(ProductContext))]
-    [Migration("20230120192753_Initial")]
-    partial class Initial
+    [Migration("20230127225342_Inital")]
+    partial class Inital
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,6 +45,7 @@ namespace autoglassback.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("DescricaoFornecedor")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DescricaoProduto")

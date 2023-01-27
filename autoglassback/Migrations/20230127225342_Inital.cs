@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace autoglassback.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Inital : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,7 +20,7 @@ namespace autoglassback.Migrations
                     DataFabricacao = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataValidade = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CodigoFornecedor = table.Column<int>(type: "int", nullable: false),
-                    DescricaoFornecedor = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DescricaoFornecedor = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CNPJFornecedor = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

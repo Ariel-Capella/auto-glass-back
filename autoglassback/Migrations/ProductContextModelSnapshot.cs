@@ -43,6 +43,7 @@ namespace autoglassback.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("DescricaoFornecedor")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DescricaoProduto")
